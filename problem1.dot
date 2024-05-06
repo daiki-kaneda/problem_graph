@@ -47,7 +47,7 @@ digraph problem1 {
     node11 -> node14 [label=<<font point-size="10" color="black">1/3</font>>, arrowhead=none];
     node12 -> node10 [label=<<font point-size="10" color="black">2/3</font>>, arrowhead=none];
 
-    node10 -> node16 [label=<<font point-size="10" color="black">2/3</font>>, arrowhead=vee];
-    node13 -> node17 [label=<<font point-size="10" color="black">2/3</font>>, arrowhead=vee];
-    node14 -> node18 [label=<<font point-size="10" color="black">2/3</font>>, arrowhead=vee];
+    node10 -> node16 [arrowhead=vee];
+    node13 -> node17 [arrowhead=vee];
+    node14 -> node18 [arrowhead=vee];
 }
