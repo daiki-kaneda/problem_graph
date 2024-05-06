@@ -1,0 +1,39 @@
+digraph problem4_1 {
+  rankdir=BT; // 上から下の向き
+  
+  splines = ortho
+  A [label="A",shape=plain];
+  B [label="C",shape=plain];
+  C [label="B",shape=plain];
+  D [label="E",shape=plain];
+  E [label="D",shape=plain];
+  F [label="G",shape=plain];
+  G [label="F",shape=plain];
+  
+  p1 [shape=point,fixedsize=true, width=0.001, height=0.0001]
+  p2 [shape=point,fixedsize=true, width=0.001, height=0.0001]
+  p3 [shape=point,fixedsize=true, width=0.001, height=0.0001]
+  p4 [shape=point,fixedsize=true, width=0.001, height=0.0001]
+  p5 [shape=point,fixedsize=true, width=0.001, height=0.0001]
+  p6 [shape=point,fixedsize=true, width=0.001, height=0.0001]
+  p7 [shape=point,fixedsize=true, width=0.001, height=0.0001]
+
+  // エッジ
+  A -> p4 [arrowhead=none];
+  B -> p1 [arrowhead=none];
+  C -> p1 [arrowhead=none];
+  D -> p2 [arrowhead=none];
+  E -> p2 [arrowhead=none];
+  F -> p3 [arrowhead=none];
+  G -> p3 [arrowhead=none];
+  p1->p4 [arrowhead=none]
+  p2->p5 [arrowhead=none]
+  p3->p5 [arrowhead=none]
+  p4->p6 [arrowhead=none]
+  p5->p6 [arrowhead=none]
+
+  // 階層の設定
+  {rank=same; A; B; C; D;E;F;G;} // 1回戦
+  {rank=same; p1; p2;p3;} // 2回戦
+  {rank=same; p4; p5;} // 3回戦
+}
