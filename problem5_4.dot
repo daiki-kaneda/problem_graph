@@ -1,0 +1,27 @@
+digraph problem5_4 {
+    rankdir = LR; // 左から右のレイアウトを指定
+
+    // ダミーノード
+    ""[shape=point];
+
+    // ノードのスタイル設定
+    node[shape=plain];
+
+    // ノードの定義
+    node1 [label=<J<sub>2</sub>>];
+    node2 [label=<J<sub>3</sub>>];
+    node3 [label=<J<sub>4</sub>>];
+    node4 [label="W"];
+    node5 [label="W"];
+    node6 [label="W"];
+
+    // エッジの定義（有向）
+    "" -> node1 [label=<<font point-size="11" color="black">2/9</font>>, arrowhead=none];
+    "" -> node2 [label=<<font point-size="11" color="black">4/27</font>>, arrowhead=none];
+    "" -> node3 [xlabel=<<font point-size="11" color="black">13/27</font>>, arrowhead=none];
+
+    node1 -> node4 [label=<<font point-size="11" color="black">α</font>>, arrowhead=none];
+    node2 -> node5 [label=<<font point-size="11" color="black">β</font>>, arrowhead=none];
+    node3 -> node6 [label=<<font point-size="11" color="black">γ</font>>, arrowhead=none];
+
+}
