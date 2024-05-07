@@ -1,0 +1,46 @@
+digraph problem5_2 {
+    rankdir = LR; // 左から右のレイアウトを指定
+
+    // ダミーノード
+    ""[shape=point];
+
+    // ノードのスタイル設定
+    node[shape=plain];
+
+    // ノードの定義
+    node1 [label="P"];
+    node2 [label="G"];
+    node3 [label="C"];
+    node4 [label="P"];
+    node5 [label="G"];
+    node6 [label="C"];
+    node7 [label="G"];
+    node8 [label="C"];
+    node9 [label="P"];
+    node10 [label="G (6通り)"];
+    node11 [label="C (6通り)"];
+    node12 [label="P (6通り)"];
+    node13 [label=" 6/81"];
+    node14 [label=" 6/81"];
+    node15 [label=" 6/81"];
+    // エッジの定義（有向）
+    "" -> node1 [label=<<font point-size="10" color="black">1/3</font>>, arrowhead=none];
+    "" -> node2 [label=<<font point-size="10" color="black">1/3</font>>, arrowhead=none];
+    "" -> node3 [xlabel=<<font point-size="10" color="black">1/3</font>>, arrowhead=none];
+
+    node1 -> node4 [label=<<font point-size="10" color="black">1/3</font>>, arrowhead=none];
+    node2 -> node5 [label=<<font point-size="10" color="black">1/3</font>>, arrowhead=none];
+    node3 -> node6 [label=<<font point-size="10" color="black">1/3</font>>, arrowhead=none];
+
+    node4 -> node7 [label=<<font point-size="10" color="black">1/3</font>>, arrowhead=none];
+    node5 -> node8 [label=<<font point-size="10" color="black">1/3</font>>, arrowhead=none];
+    node6 -> node9 [label=<<font point-size="10" color="black">1/3</font>>, arrowhead=none];
+
+    node7 -> node10 [label=<<font point-size="10" color="black">1/3</font>>, arrowhead=none];
+    node8 -> node11 [label=<<font point-size="10" color="black">1/3</font>>, arrowhead=none];
+    node9 -> node12 [label=<<font point-size="10" color="black">1/3</font>>, arrowhead=none];
+
+    node10 -> node13 [arrowhead=vee];
+    node11 -> node14 [arrowhead=vee];
+    node12 -> node15 [arrowhead=vee];
+}
