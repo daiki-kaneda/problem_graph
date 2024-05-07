@@ -17,9 +17,9 @@ digraph problem5_1 {
     node7 [label="G"];
     node8 [label="C"];
     node9 [label="P"];
-    node10 [label="G"];
-    node11 [label="C"];
-    node12 [label="P"];
+    node10 [label="G (4通り)"];
+    node11 [label="C (4通り)"];
+    node12 [label="P (4通り)"];
     node13 [label=<4 × (1/3)<sup>4</sup> = 4/81>];
     node14 [label=<4 × (1/3)<sup>4</sup> = 4/81>];
     node15 [label=<4 × (1/3)<sup>4</sup> = 4/81>];
