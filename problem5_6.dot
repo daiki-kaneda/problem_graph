@@ -1,0 +1,34 @@
+digraph problem5_6 {    
+    rankdir = LR; // 左から右のレイアウトを指定    
+    label = "βを求めるための樹形図"    
+    // ダミーノード    
+    ""[shape=point];    
+    // ノードのスタイル設定    
+    node[shape=plain];    
+    // ノードの定義    
+    node1 [label="P"];    
+    node2 [label="G"];    
+    node3 [label="C"];    
+    node4 [label="G"];    
+    node5 [label="C"];    
+    node6 [label="P"];    
+    node7 [label="G (3通り)"];    
+    node8 [label="C (3通り)"];    
+    node9 [label="P (3通り)"];    
+    node10 [label="3×1/27 = 1/9"];    
+    node11 [label="3×1/27 = 1/9"];    
+    node12 [label="3×1/27 = 1/9"];    
+    // エッジの定義（有向）    
+    "" -> node1 [label=<<font point-size="10" color="black">1/3</font>>, arrowhead=none];    
+    "" -> node2 [label=<<font point-size="10" color="black">1/3</font>>, arrowhead=none];    
+    "" -> node3 [xlabel=<<font point-size="10" color="black">1/3</font>>, arrowhead=none];    
+    node1 -> node4 [label=<<font point-size="10" color="black">1/3</font>>, arrowhead=none];    
+    node2 -> node5 [label=<<font point-size="10" color="black">1/3</font>>, arrowhead=none];    
+    node3 -> node6 [label=<<font point-size="10" color="black">1/3</font>>, arrowhead=none];    
+    node4 -> node7 [label=<<font point-size="10" color="black">1/3</font>>, arrowhead=none];    
+    node5 -> node8 [label=<<font point-size="10" color="black">1/3</font>>, arrowhead=none];    
+    node6 -> node9 [label=<<font point-size="10" color="black">1/3</font>>, arrowhead=none];    
+    node7 -> node10 [arrowhead=vee];    
+    node8 -> node11 [arrowhead=vee];    
+    node9 -> node12 [arrowhead=vee];
+}
