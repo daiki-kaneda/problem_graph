@@ -1,0 +1,33 @@
+digraph problem4_2 {
+    rankdir = LR; // 左から右のレイアウトを指定
+
+    // ダミーノード
+    ""[shape=point];
+
+    // ノードのスタイル設定
+    node[shape=plain];
+
+    // ノードの定義
+    node1 [label="G"];
+    node2 [label="G"];
+    node3 [label="G"];
+    node4 [label="G"];
+    node5 [label="G"];
+    node6 [label="W"];
+    node7 [label="W"];
+    node8 [label=<(2/5)<sup>3</sup> = 8/125>];
+    node9 [label=<3×(2/5)<sup>2</sup>×(3/5) = 36/125>];
+
+    // エッジの定義（有向）
+    "" -> node1 [label=<<font point-size="10" color="black">2/5</font>>, arrowhead=none];
+    "" -> node2 [xlabel=<<font point-size="10" color="black">2/5</font>>, arrowhead=none];
+
+    node1 -> node3 [label=<<font point-size="10" color="black">2/5</font>>, arrowhead=none];
+    node2 -> node4 [label=<<font point-size="10" color="black">2/5</font>>, arrowhead=none];
+
+    node3 -> node5 [label=<<font point-size="10" color="black">2/5</font>>, arrowhead=none];
+    node4 -> node6 [label=<<font point-size="10" color="black">3/5</font>>, arrowhead=none];
+
+    node5 -> node7 [arrowhead=vee];
+    node6 -> node8 [arrowhead=vee];
+}
