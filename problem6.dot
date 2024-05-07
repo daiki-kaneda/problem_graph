@@ -1,0 +1,47 @@
+digraph problem6 {
+    rankdir = LR; // 左から右のレイアウトを指定
+
+    // ダミーノード
+    ""[shape=point];
+
+    // ノードのスタイル設定
+    node[shape=plain];
+
+    // ノードの定義
+    node1 [label="A"];
+    node2 [label="A"];
+    node3 [label="A"];
+    node4 [label="1/5"];
+    node5 [label="B"];
+    node6 [label="B"];
+    node7 [label="Aに帽子を忘れる確率"];
+    node8 [label="4/25"];
+    node9 [label="C"];
+    node10 [label="Bに帽子を忘れる確率"];
+    node11 [label="16/125"];
+    node12 [label="Cに帽子を忘れる確率"];
+
+    // エッジの定義（有向）
+    "" -> node1 [label=<<font point-size="10" color="black">1/5</font>>, arrowhead=none];
+    "" -> node2 [label=<<font point-size="10" color="black">4/5</font>>, arrowhead=none];
+    "" -> node3 [xlabel=<<font point-size="10" color="black">4/5</font>>, arrowhead=none];
+
+    node1 -> node4 [arrowhead=vee];
+    node2 -> node5 [label=<<font point-size="10" color="black">1/5</font>>, arrowhead=none];
+    node3 -> node6 [label=<<font point-size="10" color="black">4/5</font>>, arrowhead=none];
+
+    node4 -> node7 [arrowhead = none,style = dotted];
+    node5 -> node8 [arrowhead=vee];
+    node6 -> node9 [label=<<font point-size="10" color="black">1/5</font>>, arrowhead=none];
+
+    node8 -> node10 [arrowhead = none,style = dotted];
+    node9 -> node11 [arrowhead=vee];
+
+    node11 -> node12 [arrowhead = none,style = dotted]
+    
+    { rank=same; node1; node1; node3; }
+    { rank=same; node4; node5; node6; }
+    { rank=same; node8; node9; }
+    { rank=same; node7; node10; node12; }
+
+}
