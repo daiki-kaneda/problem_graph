@@ -9,8 +9,8 @@ digraph problem3 {
 
     // ノードの定義
     dummy [label=" "]
-    Xlabel [label="X"]
-    Ylabel [label="Y"]
+    Xlabel [label=<<font point-size="12" color="black">X</font>>]
+    Ylabel [label=<<font point-size="12" color="black">Y</font>>]
     
 
     node1 [label="R"];
