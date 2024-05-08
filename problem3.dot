@@ -8,6 +8,11 @@ digraph problem3 {
     node[shape=plain];
 
     // ノードの定義
+    dummy [label=" "]
+    Xlabel [label="X"]
+    Ylabel [label="Y"]
+    
+
     node1 [label="R"];
     node2 [label="W"];
     node3 [label="R"];
@@ -18,8 +23,7 @@ digraph problem3 {
     node8 [label=" 1/10 ······②"];
     node9 [label=" 3/10 ······③"];
     node10 [label=" 2/10 ······④"];
-    node11 [label="X"];
-    node12 [label="Y"];
+
 
     // エッジの定義（有向）
     "" -> node1 [label=<<font point-size="12" color="black">1/2</font>>, arrowhead=none];
@@ -36,10 +40,6 @@ digraph problem3 {
     node5 -> node9 [arrowhead=vee];
     node6 -> node10 [arrowhead=vee];
     
-    {rank=same; node11; node1;}
-    {rank=same; node12; node3;}
-
-    node11 -> node2 [constraint=false,style = dotted,arrowhead=none];
-    node12 -> node6 [constraint=false,style = dotted,arrowhead=none];
-    
+    {rank=same; dummy; Xlabel; node1;}
+    {rank=same; Ylabel; node3;}
 }
