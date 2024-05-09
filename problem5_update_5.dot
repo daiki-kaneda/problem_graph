@@ -1,0 +1,33 @@
+digraph problem5_update_5 {    
+    rankdir = LR; // 左から右のレイアウトを指定    
+    // ダミーノード    
+    ""[shape=point];    
+    // ノードのスタイル設定    
+    node[shape=plain];    
+    // ノードの定義
+    xlabel [label="x"]; 
+    ylabel [label="y"];  
+
+    node1 [label="P"];    
+    node2 [label="C"];    
+    node3 [label="G"];    
+    node4 [label="G (2通り)"];    
+    node5 [label="P (2通り)"];    
+    node6 [label="C (2通り)"];      
+    node7 [label=<2×(1/3)<sup>2</sup> = 2/9>];    
+    node8 [label=<2×(1/3)<sup>2</sup> = 2/9 (ここでx,yはa,b,cの内の誰か二人を指す)>];    
+    node9 [label=<2×(1/3)<sup>2</sup> = 2/9>];    
+    // エッジの定義（有向）    
+    "" -> node1 [label=<<font point-size="10" color="black">1/3</font>>, arrowhead=none];    
+    "" -> node2 [label=<<font point-size="10" color="black">1/3</font>>, arrowhead=none];    
+    "" -> node3 [xlabel=<<font point-size="10" color="black">1/3</font>>, arrowhead=none];    
+    node1 -> node4 [label=<<font point-size="10" color="black">1/3</font>>, arrowhead=none];    
+    node2 -> node5 [label=<<font point-size="10" color="black">1/3</font>>, arrowhead=none];    
+    node3 -> node6 [label=<<font point-size="10" color="black">1/3</font>>, arrowhead=none];    
+    node4 -> node7 [arrowhead=vee];    
+    node5 -> node8 [arrowhead=vee];    
+    node6 -> node9 [arrowhead=vee];    
+
+    {rank=same; xlabel;node1;}
+    {rank=same; ylabel;node4;}
+}

@@ -7,7 +7,7 @@ digraph problem5_update_1 {
     // ノードの定義
     alabel [label="a"]; 
     blabel [label="b"]; 
-    clabel [label="c"]; 
+    clabel [label="c                            "]; 
 
     node1 [label="P"];    
     node2 [label="G"];    
@@ -35,7 +35,7 @@ digraph problem5_update_1 {
     node8 -> node11 [arrowhead=vee];    
     node9 -> node12 [arrowhead=vee];
 
-    {rank=same; a;node1;}
-    {rank=same; b;node4;}
-    {rank=same; c;node7;}
+    {rank=same; alabel;node1;}
+    {rank=same; blabel;node4;}
+    {rank=same; clabel;node7;}
 }
