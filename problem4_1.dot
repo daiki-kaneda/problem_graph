@@ -1,6 +1,7 @@
 digraph problem4_1 {
   rankdir=BT; // 上から下の向き
   
+  // if splines is commentouted ,result is problem4_1_variant.png
   splines = ortho
   A [label="A",shape=plain];
   B [label="C",shape=plain];
