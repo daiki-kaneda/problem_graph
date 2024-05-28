@@ -9,11 +9,11 @@ digraph problem6 {
 
     // ノードの定義
     node1 [label="A"];
-    node2 [label="A"];
-    node3 [label="A"];
+    node2 [label=<A&#x0305;>];
+    node3 [label=<A&#x0305;>];
     node4 [label="1/5"];
     node5 [label="B"];
-    node6 [label="B"];
+    node6 [label=<B&#x0305;>];
     node7 [label="Aに帽子を忘れる確率"];
     node8 [label="4/25"];
     node9 [label="C"];
