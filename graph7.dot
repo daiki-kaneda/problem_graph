@@ -1,0 +1,26 @@
+digraph graph7 {
+    rankdir = LR; // 左から右のレイアウトを指定
+
+    // ダミーノード
+    ""[shape=point,width=0.001];
+
+    // ノードのスタイル設定
+    node[shape=plain];
+
+    // ノードの定義
+    node1 [label="A"];
+    node2 [label="B"];
+    node3 [label="B'"];
+    node4 [label="A'"];
+
+
+    // エッジの定義（有向）
+    "" -> node1 [label=<<font point-size="11" color="black">2/3       </font>>, arrowhead=none];
+    "" -> node2 [xlabel=<<font point-size="11" color="black">1/3</font>>, arrowhead=none];
+
+
+    node1 -> node3 [label=<<font point-size="11" color="black">p</font>>, arrowhead=none];
+    node2 -> node4 [label=<<font point-size="11" color="black">q</font>>, arrowhead=none];
+   
+
+}

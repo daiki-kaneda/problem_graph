@@ -1,0 +1,24 @@
+digraph graph8 {
+    rankdir = LR; // 左から右のレイアウトを指定
+
+    // ダミーノード
+    ""[shape=point,width=0.01];
+
+    // ノードのスタイル設定
+    node[shape=plain];
+
+    // ノードの定義
+    node1 [label="",shape=point,width=0.01];
+    node2 [label="N"];
+    node3 [label="L"];
+
+
+
+    // エッジの定義（有向）
+    "" -> node1 [label=<<font point-size="11" color="black">q</font>>, arrowhead=none];
+
+    node1 -> node2 [label=<<font point-size="11" color="black">q<sub>1</sub>      </font>>, arrowhead=none];
+    node1 -> node3 [xlabel=<<font point-size="11" color="black">q<sub>2</sub></font>>, arrowhead=none];
+   
+
+}
